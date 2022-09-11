@@ -2,6 +2,7 @@
   "divisions": [
     {
       "id": "1",
+      "country_id": "1",
       "name": "Barishal",
       "bn_name": "বরিশাল",
       "lat": "22.701002",
@@ -9,6 +10,7 @@
     },
     {
       "id": "2",
+      "country_id": "1",
       "name": "Chattogram",
       "bn_name": "চট্টগ্রাম",
       "lat": "22.356851",
@@ -16,6 +18,7 @@
     },
     {
       "id": "3",
+      "country_id": "1",
       "name": "Dhaka",
       "bn_name": "ঢাকা",
       "lat": "23.810332",
@@ -23,6 +26,7 @@
     },
     {
       "id": "4",
+      "country_id": "1",
       "name": "Khulna",
       "bn_name": "খুলনা",
       "lat": "22.845641",
@@ -30,6 +34,7 @@
     },
     {
       "id": "5",
+      "country_id": "1",
       "name": "Rajshahi",
       "bn_name": "রাজশাহী",
       "lat": "24.363589",
@@ -37,6 +42,7 @@
     },
     {
       "id": "6",
+      "country_id": "1",
       "name": "Rangpur",
       "bn_name": "রংপুর",
       "lat": "25.743892",
@@ -44,6 +50,7 @@
     },
     {
       "id": "7",
+      "country_id": "1",
       "name": "Sylhet",
       "bn_name": "সিলেট",
       "lat": "24.894929",
@@ -51,6 +58,7 @@
     },
     {
       "id": "8",
+      "country_id": "1",
       "name": "Mymensingh",
       "bn_name": "ময়মনসিংহ",
       "lat": "24.747149",

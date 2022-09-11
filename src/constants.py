@@ -10,4 +10,5 @@ class Constants(ABC):
     APP_DATA_DIRECTORY: str = str(os.path.join(APP_ROOT_DIRECTORY, "data"))
     # Geographical Hierarchy Order
     GEO_HIERARCHY: set = {'continents', 'countries', 'regions',
-                          'divisions', 'cities', 'districts', 'postcodes', 'upazilas'}
+                          'divisions', 'cities', 'districts', 'upazilas', 'postcodes'}
+    

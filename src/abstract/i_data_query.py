@@ -10,7 +10,7 @@ class IDataQuery(ABC):
     """
         
     @abstractmethod
-    def collect_all_json_data(self, directory_path: str) -> dict:
+    def collect_all_json_data(self, directory_path: str, geo_hierarchy_sequence: set) -> dict:
         """
         Collects all the data from the different chunks of json files
         and arrange those according to their hierarchy and relationship.

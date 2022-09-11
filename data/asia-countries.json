@@ -1,0 +1,16 @@
+{
+    "countries": [
+        {
+            "id": "1",
+            "continent_id": "1",
+            "name": "Bangladesh",
+            "name_acronym" : "bd",
+            "language": "Bengali",
+            "language_acronym": "bn",
+            "bn_name": "বাংলাদেশ",
+            "lat": "23.6850",
+            "long": "90.3563",
+            "geo_json_file_name": "bangladesh.geojson"
+        }
+    ]
+}
