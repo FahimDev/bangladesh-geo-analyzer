@@ -16,7 +16,16 @@ class IDataQuery(ABC):
         and arrange those according to their hierarchy and relationship.
         Then return the whole data set as Py Dictionary.
         """
-    
+
+    @abstractmethod
+    def geo_hierarchy_manager(self, directory_path: str, file_names: list, geo_hierarchy_sequence: set) -> dict:
+        """
+        This method will take folder location (absulate path) as String and Targeted 
+        file names (JSON file) as List and geographical hierarchy sequence and Py Set. Arrange those data according to their Geographical
+        Hierarchy and return the data set as Py Dictionary.
+        """
+        
+    @abstractmethod
     def _find_files(self, directory_path: str) -> list:
         """
         This method is responsible for finding all the file names of a
