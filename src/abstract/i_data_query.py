@@ -1,4 +1,3 @@
-import json
 from abc import ABC, abstractmethod
 
 
@@ -11,9 +10,15 @@ class IDataQuery(ABC):
     """
         
     @abstractmethod
-    def collect_all_json_data(self, file_path: str) -> dict:
+    def collect_all_json_data(self, directory_path: str) -> dict:
         """
         Collects all the data from the different chunks of json files
         and arrange those according to their hierarchy and relationship.
         Then return the whole data set as Py Dictionary.
+        """
+    
+    def _find_files(self, directory_path: str) -> list:
+        """
+        This method is responsible for finding all the file names of a
+        specific directory and return those file names as a list format.
         """
