@@ -8,7 +8,14 @@ class IDataQuery(ABC):
     from the json files and serving different basic query requests. 
     Design and Development: Md. Ariful Islam || fahim.arif0373@outlook.com
     """
-        
+
+    @abstractmethod
+    def get_geojson(self, data_directory_path: str, file_name: str) -> dict:
+        """
+        This method takes directory file location and file name as parameter then 
+        finds and read the file data and return the Geo-JSON data.
+        """
+
     @abstractmethod
     def collect_all_json_data(self, directory_path: str, geo_hierarchy_sequence: set) -> dict:
         """
@@ -21,10 +28,11 @@ class IDataQuery(ABC):
     def geo_hierarchy_manager(self, directory_path: str, file_names: list, geo_hierarchy_sequence: set) -> dict:
         """
         This method will take folder location (absulate path) as String and Targeted 
-        file names (JSON file) as List and geographical hierarchy sequence and Py Set. Arrange those data according to their Geographical
+        file names (JSON file) as List and geographical hierarchy sequence and Py Set. 
+        Arrange those data according to their Geographical
         Hierarchy and return the data set as Py Dictionary.
         """
-        
+
     @abstractmethod
     def _find_files(self, directory_path: str) -> list:
         """
