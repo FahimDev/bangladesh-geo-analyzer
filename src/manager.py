@@ -8,9 +8,14 @@ class Manager:
     def menu(self):
         abs_directory_path = Constants.APP_DATA_DIRECTORY
         geo_hierarchy_sequence = Constants.GEO_HIERARCHY
-        obj = DataQuery()
-        data = obj.get_geojson(abs_directory_path, "bangladesh.geojson")
         obj_map = MapMarker()
-        obj_map.create_map(data)
+        obj = DataQuery()
+        geojson_data = obj.get_geojson(abs_directory_path, "bangladesh.geojson")
+        payload: dict = {
+            'name': 'Bangladesh',
+            'latitude': 23.6850,
+            'longitude': 90.3563
+        }
+        obj_map.create_map(geojson_data, payload)
         print("Done")
         #obj.collect_all_json_data(abs_directory_path, geo_hierarchy_sequence)
